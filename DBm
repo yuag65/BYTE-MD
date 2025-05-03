@@ -1,0 +1,32 @@
+const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+
+module.exports = {
+  "SESSION_ID": process.env.SESSION_ID || "CYPHER-X:~UEsDBBQAAAgIAMILo1qEinX4*QQAAIIIAAAKAAAAY3JlZHMuanNvbpVUy5LyNhp9lSltoYOvGKjqqjHGYLe5GDBgeyoLYctY4KskG9x*9StkMS+QxTxBNtnOIyWPkHLTne5F8k+PVypJPt*ROd*5voEsxxRZqAGjb6AguIYMtUvWFAiMwLiKIkRAF4SQQTACqU4Gp4PQ22ir5x1PQ9ueTUtzmTfIF5hs7G8XVjvHujBE6RG8dEFRHRMcfAdwuMirvVeoE8dPRBc6Oy0fNvrVUL350LzF9UAa6Ape3p43i0fw0iJCTHB20osYpYjAxEKNDTH5Gn00Ga8MZxXbrtu*TTfz876HLsOCTz0tvSyls38rNml5JuTwRfrCJvGuFz*pGxTzwzl2*TklvrVyK9lfaFBdno0nsp1PLjvpTp*iU4ZCM0QZw6z5su7e3DHsy*lckLCUVdPvULJfKMGyH2iePufHnhX2qGiGXmJ+jbgnbOOd4lTxbfuE6bXzPBjrVrBH*VARwoGu8DtN9TvbyZJTPxO3yXuvXP4f3bUFO66ks3vkdp2ip+30WsoXrhQfMy4Iy6PuXuXOLVwwU9x9UXdtXxfDJlhcwz53Lsp001FO24ycuJCdmdjbuHvjOhblVP+kO2QV+R7LDZGj48pzpzxOnmLlsJjUB0nPx8rz4dk7jLVbBvl0W5BEXXs4jg4DyxMKQzSLzs7YT*rlrEakkfCewye0EvxdEamdifr4+qILaswQjPiXLiDohCkjkOE8a*cEcdgFMKy3KCCIvcoLUGJpUOGldWVb0D5ArK514Xzp8FdIpymjYbV0nqbGExS9R9AFBckDRCkKDUxZTpoFohSeEAWjf*3YBRm6sbtxbTmR74IIE8p2WVUkOQzfXX0*hEGQVxnbNlmgtQtEwIj72EaM4exEWx2rDJIgxjXSYsgoGEUwoeilC0JU4wC1eED2qnXqMOKIQqDxpBQV+mBeW8pxnt2vRHKgwL4kP8Cgf3yQogF6GIii+BDKHES81IfcEYIuwG+Zaf*5+4CfObnmblerdHvbmI8MJ54UmjAbKPmrDXftEUEhGDFSoS44wuBSFU5+Qdl3cOmMjIk1MaoyG3hanQ4raMeeAb3g+gn37ikYffuYU1oetniG4yqyPpuDLkhfWxC3LxdEURYVRVJEQRjx4j*pD9dWSFgUP2SIgS5I3q7JHDfgeV7ih7Iktjfbgy7IYAsGBHFszufmavn7zz*98o*f*vPf33*+968tqzfL2nohYhAntM2ibQkdP7B183jmA3U2U*WTqp1U8GHxe1buvXjceTi+DA43udTnQdn4gUUKMp3vV1PRGGyCQEZsXO7G+Ux**AsQMAJbdbm6qWJ9SKLhWovnvdPOKnvipqT5srHVgWq7ruPWSiSXC7jJU15ruIsjV0pk2ukSCv1+4s+XYkbwJVlPVW5Q++Hk+thWu7fa52KTwLSr5*J5F2c8d2nWqrYJ*TQPre2Rcmt50ayJtdjGffEYXbaFcL1akOW90llwlG9yentycRi74dAfSmuMptvouS7eU*w6RZK36Y1f8*XtrTEjjF6H4Z+e*A9rPzLCvXQ*YbyN17*pw*GBn5m5b08pgrEmWjR1tbIPb1veicNbT3eNlUvWMFHhOAYvLz92QZFAFuUkBSOAXzMHuoDkVZthM4vy7w1t9WTqp*vDE0iZ+jEXHJwiymBagBGvSH1BlJWhdL9lk7wwII1bDWzei6O25Ru1KLYMsvcxA9T20+cYvPwBUEsBAhQDFAAACAgAwgujWoSKdfj9BAAAgggAAAoAAAAAAAAAAAAAAKSBAAAAAGNyZWRzLmpzb25QSwUGAAAAAAEAAQA4AAAAJQUAAAAA",
+  "ALIVE_IMG": process.env.ALIVE_IMG || "https://raw.githubusercontent.com/HyHamza/HyHamza/refs/heads/main/Images/logo.jpg",
+  "PREFIX": process.env.PREFIX || ".",
+  "AUTO_READ_STATUS": process.env.AUTO_READ_STATUS === 'true',
+  "MODE": process.env.MODE || "public",
+  "OWNER_NUMBER": process.env.OWNER_NUMBER || "923072380380",
+  "OWNER_NAME": process.env.OWNER_NAME || "Hamza",
+  "ALWAYS_ONLINE": process.env.ALWAYS_ONLINE === 'true',
+  "PRESENCE": process.env.PRESENCE || "online",
+  "OMDB_API_KEY": process.env.OMDB_API_KEY || "76cb7f39",
+  "READ_CMD": process.env.READ_CMD === 'true',
+  "AUTO_VOICE": process.env.AUTO_VOICE === 'true',
+  "AUTO_STICKER": process.env.AUTO_STICKER === 'true',
+  "AUTO_REPLY": process.env.AUTO_REPLY === 'true',
+  "AUTO_REACT": process.env.AUTO_REACT === 'true',
+  "WELCOME": process.env.WELCOME === 'true',
+  "ANTI_BAD": process.env.ANTI_BAD === 'true',
+  "ANTI_LINK": process.env.ANTI_LINK === 'true',
+  "ANTI_GROUP_LINK": process.env.ANTI_GROUP_LINK === 'true',
+  "ANTI_DELETE": process.env.ANTI_DELETE === 'true',
+  "ANTI_VIEW_ONCE": process.env.ANTI_VIEW_ONCE === 'true',
+  "ANTI_BOT": process.env.ANTI_BOT === 'true',
+  "PREMIUM_USERS": process.env.PREMIUM_USERS || "",
+  "COUNTRY_BLOCK": process.env.COUNTRY_BLOCK === 'true',
+  "COUNTRY_BLOCK_CODE": process.env.COUNTRY_BLOCK_CODE || "972",
+  "EMOJI": process.env.EMOJI || "🙄",
+  "AUTO_TYPING": process.env.AUTO_TYPING === 'true'
+};
